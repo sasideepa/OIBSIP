@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVIT College</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans">
+
+    <!-- Header -->
+    <header class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl">VVIT College</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:underline">Home</a></li>
+                    <li><a href="#about" class="hover:underline">About Us</a></li>
+                    <li><a href="#academics" class="hover:underline">Academics</a></li>
+                    <li><a href="#admissions" class="hover:underline">Admissions</a></li>
+                    <li><a href="#campus-life" class="hover:underline">Campus Life</a></li>
+                    <li><a href="#research" class="hover:underline">Research</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center h-96" style="background-image: url('images/college-aerial-view.jpg');">
+        <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold">Welcome to VVIT</h2>
+                <p class="text-xl mt-2">Empowering Innovation and Excellence in Engineering & Technology</p>
+                <a href="#academics"
+                    class="inline-block bg-blue-500 text-white px-6 py-3 mt-4 rounded hover:bg-blue-600">Explore
+                    Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold">About Us</h3>
+            <p class="mt-4">VVIT, established in 2007, aims to provide quality education in engineering and technology,
+                fostering an environment of innovation and research.</p>
+            <img src="images/about-vvit.webp" alt="About VVIT" class="mx-auto mt-4 rounded-lg shadow-lg"
+                style="width: 80%; max-width: 600px;">
+            <a href="#" class="inline-block bg-blue-500 text-white px-6 py-3 mt-4 rounded hover:bg-blue-600">Learn
+                More</a>
+        </div>
+    </section>
+
+
+    <!-- Academics Section with Columnar Layout -->
+    <section id="academics" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h3 class="text-center text-3xl font-bold">Explore Our Academic Programs</h3>
+            <p class="text-center mt-6">Dive into our diverse B.Tech, M.Tech, and MBA programs, designed to equip
+                students
+                with practical skills and critical thinking in engineering and technology.</p>
+
+            <!-- Programs Display Section -->
+            <div class="flex flex-wrap justify-center items-start mt-8 gap-x-6 gap-y-8">
+                <!-- Computer Science Engineering Description and Image -->
+                <div class="flex flex-col items-center text-center w-1/3">
+                    <h4 class="text-2xl font-semibold">Computer Science Engineering</h4>
+                    <p class="mt-2">Pioneering in AI, Machine Learning, and Software Development through our advanced
+                        labs
+                        and hands-on projects.</p>
+                    <img src="images/cs-lab.webp" alt="Computer Science Lab" class="rounded-lg shadow-lg mt-2"
+                        style="width: 100%; max-width: 300px;">
+                </div>
+
+                <!-- Electrical Engineering Description and Image -->
+                <div class="flex flex-col items-center text-center w-1/3">
+                    <h4 class="text-2xl font-semibold">Electrical Engineering</h4>
+                    <p class="mt-2">Emphasizing renewable energy, smart grids, and robotics with extensive lab work and
+                        research opportunities.</p>
+                    <img src="images/ee-lab.webp" alt="Electrical Engineering Lab" class="rounded-lg shadow-lg mt-2"
+                        style="width: 100%; max-width: 300px;">
+                </div>
+
+                <!-- Mechanical Engineering Description and Image -->
+                <div class="flex flex-col items-center text-center w-1/3">
+                    <h4 class="text-2xl font-semibold">Mechanical Engineering</h4>
+                    <p class="mt-2">Focusing on design, manufacturing, and thermal sciences, supported by industry
+                        projects
+                        and cutting-edge labs.</p>
+                    <img src="images/me-lab.webp" alt="Mechanical Engineering Lab" class="rounded-lg shadow-lg mt-2"
+                        style="width: 100%; max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto text-center">
+            � 2024 VVIT, Nambur. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>
