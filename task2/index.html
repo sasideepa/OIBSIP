@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Portfolio</title>
+	<!-- Tailwind CSS CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<style>
+		/* Initial state */
+		.project-tile {
+			width: calc(33.333% - 1rem);
+			/* Adjust based on the desired width minus margin */
+		}
+
+		/* Expanded state styles */
+		#projectsRow.expanded .project-tile {
+			transform: scale(1.1);
+			/* Slightly larger scale on expand */
+			width: calc(50% - 1rem);
+			/* Larger width for more prominence */
+			transition: transform 0.3s ease, width 0.3s ease;
+			/* Smooth transition for transform and width */
+		}
+
+		@media (max-width: 768px) {
+
+			/* Adjustments for smaller screens */
+			#projectsRow.expanded .project-tile,
+			.project-tile {
+				width: 100%;
+				/* Full width on smaller screens */
+			}
+		}
+	</style>
+
+</head>
+
+<body class="font-sans bg-gray-100">
+	<!-- Introduction Section -->
+	<section class="bg-blue-500 text-white text-center p-8">
+		<div class="container mx-auto flex flex-col items-center">
+			<!-- Image -->
+			<img src="profile_image.jpg" alt="Sasideepa Maddirala" class="rounded-full w-32 h-32 mb-4">
+			<h1 class="text-4xl font-bold">Sasideepa Maddirala</h1>
+			<p class="mt-2">Engineer by education, innovator by ambition, and volunteer by heart. Diving into the depths
+				of
+				technology and surfacing with solutions that matter.</p>
+			<!-- Catchy Line -->
+			<p class="italic mt-4">"Turning coffee into code, ideas into reality, and challenges into opportunities."
+			</p>
+		</div>
+	</section>
+
+
+	<!-- Skills Section -->
+	<section class="container mx-auto mt-8">
+		<h2 class="text-2xl font-semibold text-center">Skills</h2>
+		<div class="flex justify-center gap-4 mt-4">
+			<!-- List your skills here -->
+			<span class="bg-blue-200 rounded-full px-4 py-1">HTML</span>
+			<span class="bg-blue-200 rounded-full px-4 py-1">CSS</span>
+			<span class="bg-blue-200 rounded-full px-4 py-1">JavaScript</span>
+			<span class="bg-blue-200 rounded-full px-4 py-1">Tailwind</span>
+			<span class="bg-blue-200 rounded-full px-4 py-1">NodeJS</span>
+			<span class="bg-blue-200 rounded-full px-4 py-1">ExpressJS</span>
+			<span class="bg-blue-200 rounded-full px-4 py-1">AWS</span>
+			<!-- Add more as needed -->
+		</div>
+	</section>
+
+
+<!-- Projects Section -->
+<section class="container mx-auto mt-8">
+	<h2 class="text-2xl font-semibold text-center">Projects</h2>
+	<div class="flex justify-center gap-4 mt-4 flex-wrap" id="projectsRow">
+		<!-- Project Tile 1 -->
+		<div
+			class="project-tile bg-blue-100 p-4 rounded-lg transform transition duration-500 hover:scale-105 cursor-pointer">
+			<h3 class="font-bold">Enhanced Efficiency Photovoltaic Inverter</h3>
+			<p>Developed a cascaded multilevel PV inverter topology, improving harmonic performance and achieving a
+				2.64% efficiency improvement.</p>
+		</div>
+		<!-- Project Tile 2 -->
+		<div
+			class="project-tile bg-blue-100 p-4 rounded-lg transform transition duration-500 hover:scale-105 cursor-pointer">
+			<h3 class="font-bold">Ecommerce API using Express JS</h3>
+			<p>Developed a comprehensive e-commerce API to streamline online shopping experiences through RESTful
+				services.</p>
+		</div>
+	</div>
+	<!-- GitHub Link -->
+	<div class="mt-8 text-center">
+		<p>You can follow my work here on <a href="https://github.com/sasideepa" class="text-blue-500 hover:underline">GitHub</a>, or 
+				<a href="https://www.linkedin.com/in/maddiralasasideepa/" class="text-blue-500 hover:underline">Linkedin</a>.</p>
+	</div>
+</section>
+
+<!-- Internships Section -->
+<section class="container mx-auto mt-8">
+	<h2 class="text-2xl font-semibold text-center">Internships</h2>
+	<div class="mt-4">
+		<div class="bg-gray-100 rounded-lg p-4 shadow-md mb-4">
+			<h3 class="text-lg font-semibold">Salesforce Developer Virtual Intern - Smartinternz</h3>
+			<p class="mt-2">April 2023 - May 2023, Virtual</p>
+			<ul class="list-disc pl-5 mt-2">
+				<li>Optimized Salesforce virtual objects/layout with Lightning App Builder.</li>
+				<li>Reduced manual tasks by 30% and migrated 10K+ records with 95% accuracy.</li>
+				<li>Resolved 20+ issues, documented 50+ processes, improving project timeline by 15%.</li>
+			</ul>
+		</div>
+		
+	</div>
+</section>
+
+<!-- Certifications Section -->
+<section class="container mx-auto mt-8">
+	<h2 class="text-2xl font-semibold text-center">Certifications</h2>
+	<div class="mt-4 flex flex-wrap justify-center gap-4">
+		<!-- AI for Everyone -->
+		<div class="bg-gray-100 rounded-lg p-4 shadow-md">
+			<h3 class="text-lg font-semibold">AI for Everyone</h3>
+			<p>Coursera, 2021</p>
+		</div>
+	</div>
+</section>
+
+
+	<!-- Volunteer Section -->
+	<section class="container mx-auto mt-8">
+		<h2 class="text-2xl font-semibold text-center">Volunteer Work</h2>
+		<div class="text-center mt-4">
+			<p>My volunteer experiences reflect my commitment to community service and positive change. Below are the
+				key
+				initiatives I've been involved in:</p>
+		</div>
+		<div class="mt-8">
+			<!-- National Service Scheme -->
+			<div class="bg-gray-200 rounded-lg p-4 shadow-md">
+				<h3 class="text-lg font-semibold">National Service Scheme (NSS) Volunteer</h3>
+				<p class="mt-2">Led and participated in numerous community service projects including blood donation
+					camps
+					and charity events, significantly enhancing community engagement and support. My efforts helped
+					foster
+					partnerships, amplifying the donor base and contributions towards societal welfare.</p>
+			</div>
+			<!-- Additional volunteer work can be added here -->
+		</div>
+	</section>
+
+
+	<!-- Contact Information -->
+	<section class="bg-gray-800 text-white text-center p-8 mt-8">
+		<h2 class="text-2xl font-semibold">Contact Me</h2>
+		<p>Feel free to reach out via email at <a href="sasideepamaddirala10@gmail.com"
+				class="underline">sasideepamaddirala10@gmail.com</a></p>
+	</section>
+
+	<script>
+		document.getElementById('projectsRow').addEventListener('click', function () {
+			this.classList.toggle('expanded');
+		});
+	</script>
+
+</body>
+
+</html>
