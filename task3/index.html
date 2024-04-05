@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conversion Tool</title>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100 p-8">
+	<div class="text-center mb-8">
+		<button class="section-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"
+			data-section="temperatureSection">Temperature Conversion</button>
+		<button class="section-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"
+			data-section="siMetricSection">SI to Metric Conversion</button>
+	</div>
+
+	<!-- Temperature Conversion Section -->
+	<div id="temperatureSection" class="conversion-section max-w-md mx-auto bg-white rounded-lg p-6 hidden">
+		<h1 class="text-xl font-bold text-center mb-4">Temperature Conversion</h1>
+		<input type="number" id="tempInput" class="border-2 border-gray-200 p-2 w-full rounded mb-4"
+			placeholder="Enter temperature">
+		<select id="tempScale" class="border-2 border-gray-200 p-2 w-full rounded mb-4">
+			<option value="Celsius">Celsius</option>
+			<option value="Fahrenheit">Fahrenheit</option>
+			<option value="Kelvin">Kelvin</option>
+		</select>
+		<button onclick="convertTemperature()"
+			class="bg-blue-500 text-white px-4 py-2 rounded w-full mb-4">Convert</button>
+		<div id="tempResult" class="text-center"></div>
+	</div>
+
+	<!-- SI to Metric Conversion Section -->
+	<div id="siMetricSection" class="conversion-section max-w-md mx-auto bg-white rounded-lg p-6 hidden">
+		<h1 class="text-xl font-bold text-center mb-4">SI to Metric Conversion</h1>
+		<input type="number" id="siInput" class="border-2 border-gray-200 p-2 w-full rounded mb-4"
+			placeholder="Enter value">
+		<select id="siScale" class="border-2 border-gray-200 p-2 w-full rounded mb-4">
+			<option value="Meters to Kilometers">Meters to Kilometers</option>
+			<option value="Kilograms to Grams">Kilograms to Grams</option>
+			<option value="Liters to Milliliters">Liters to Milliliters</option>
+		</select>
+		<button onclick="convertSI()" class="bg-blue-500 text-white px-4 py-2 rounded w-full mb-4">Convert</button>
+		<div id="siResult" class="text-center"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
