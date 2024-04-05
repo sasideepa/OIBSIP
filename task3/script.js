@@ -1,4 +1,5 @@
 document.querySelectorAll('.section-btn').forEach(button => {
+	//  we use data-sectoin attribute on the button to get the section id and show the section and hide the rest
 	button.addEventListener('click', function () {
 		document.querySelectorAll('.conversion-section').forEach(section => {
 			section.classList.add('hidden');
